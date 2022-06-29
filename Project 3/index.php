@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <body>
     <h1>LOGO</h1>
@@ -9,37 +10,36 @@
 
 
 
-<form method="get" action="receiveform.php">
-First Name:
-<input type="text" name="first">
-<br>
-<br>
-Last Name:
-<input type="text" name="last">
-<br>
-<br>
-Email:
-<input type="text" name="eml">
-<br>
-<br>
-<section class="class">
-          <label for="class">Class</label>
-          <select name="class" id="class">
-            <option value="improvisation">Improvisation</option>
-            <option value="acting">Acting</option>
-            <option value="playwrighting">Playwrighting</option>
-          </select>
-</section>
-<br>
-<section class="suggestion">
-          <label for="suggestion">Please share as much detail as possible</label>
-          <br>
-          <br>
+  <form method="post" action="read.php">
+    <label>First Name:<br>
+      <input type="text" name="first">
+    </label>
+    <br>
+    <label>Last Name:<br>
+      <input type="text" name="last">
+    </label>
+    <br>
+    <label>Email:<br>
+      <input type="text" name="eml">
+    <br>
+    <br>
+    <section class="class">
+      <label for="class">Class</label>
+        <select name="class" id="class">
+          <option value="improvisation">Improvisation</option>
+          <option value="acting">Acting</option>
+          <option value="playwrighting">Playwrighting</option>
+        </select>
+    </section>
+    <br>
+    <section class="suggestion">
+        <label for="suggestion">Please share as much detail as possible</label>
+        <br>
+        <br>
           <textarea id="suggestion" name="suggestion" rows="3" cols="40">Your suggestion here. . . </textarea>
-</section>
-<br>
-<input type="submit" value="Make a Suggestion">
-</form>
-
+    </section>
+    <br>
+    <input type="submit" value="Make a Suggestion">
+  </form>
 </body>
 </html>
